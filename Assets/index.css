@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&family=Poppins:wght@200;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&display=swap');
+
+
+
+:root {
+    --brown: #3F2305;
+    --beige1: #DFD7BF;
+    --beige2: #F2EAD3;
+    --grey: #F5F5F5;
+    --transbrown: #3f2305;
+}
+
+/* Header Section */
+.header-section{
+    background: url(./images/Home-img.jpg) top no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.header-section .header-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    padding: 0.75rem;
+    color: var(--brown);
+}
+
+
+.header-section .header-container .page-heading{
+    font-family: 'Alegreya Sans SC', sans-serif;
+    letter-spacing: 0.3rem;
+    font-size: 4.5rem;
+    line-height: 3.25rem;
+    margin: 0.75rem 0.75rem 0 0.75rem;
+    padding: 0.75rem 0.75rem 0 0.75rem;  
+}
+
+.header-section .header-container .page-subtitle{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    margin: 0.1rem 0.75rem 0.5rem 0.75rem;
+    padding: 0.1rem 0.75rem 0.5rem 0.75rem;
+    letter-spacing: 0.5rem;
+}
+
+.header-section .header-container .details{
+    max-width: 50vw;
+    padding: 0.25rem 0.75rem;
+    margin: 0.25rem 0.75rem;
+    line-height: 1.3rem;
+}
+
+.header-section .header-container .button-group{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    max-width: 40vw;
+    flex-wrap: wrap;
+}
+
+.header-section .header-container .button-group .button-primary {
+    padding: 0.75rem 2.25rem;
+}
+
+
+
+/* Media Query */
+
+
+@media (min-width: 1400px) {
+    .header-section .header-container .page-heading {
+        font-size: 5rem;
+    }
+
+    .header-section .header-container .page-subtitle {
+        font-size: 2rem;
+    }
+
+    .header-section .header-container .details {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        max-width: 60vw;
+    }
+
+    .header-section .header-container .button-group{
+        justify-content: center;
+    }
+}
+
+@media (max-width: 1250px){
+    .header-section .header-container .details {
+        max-width: 60vw;
+    }
+
+    .header-section .header-container .button-group{
+        max-width: 50vw;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+@media(max-width: 1000px){
+    .header-section {
+        background: 
+        linear-gradient(to bottom, rgba(187, 187, 187, 0.7), rgba(187, 187, 187, 0.95)), 
+        url(./images/Home-img.jpg) 
+        right 
+        no-repeat;
+        
+        background-size: cover;
+        height: 100vh;
+    }
+
+
+    .header-section .header-container .page-heading {
+        font-size: 3.75rem;
+    }
+
+    .header-section .header-container .page-subtitle {
+        font-size: 1.6rem;
+    }
+
+    .header-section .header-container .details {
+        max-width: 60vw;
+        font-size: 1.2rem;
+    }
+
+    .header-section .header-container .button-group {
+        max-width: 60vw;
+        justify-content: space-evenly;
+        gap: 0;
+    }
+
+    .header-section .header-container .button-group .button-primary{
+        border: 3px solid var(--brown);
+        font-weight: bold;
+        padding: 0.75rem 1.75rem;
+    }
+
+}
+
+@media (max-width: 715px) {
+
+    .header-section .header-container .page-heading {
+        font-size: 3rem;
+    }
+    
+    .header-section .header-container .details {
+        max-width: 90vw;
+        font-size: 1.2rem;
+        letter-spacing: 0.05rem;
+        line-height: 1.5rem
+    }
+
+    .header-section .header-container .button-group {
+        max-width: 90vw;
+        justify-content: space-evenly;
+    }
+
+    .header-section .header-container .button-group .button-primary{
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 624px) {
+
+    .header-section .header-container .page-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 490px) {
+
+    .header-section .header-container .page-subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+
+@media (max-width: 300px) {
+   
+    .header-section .header-container .page-heading {
+        font-size: 2.75rem;
+        margin: 0.25rem 0.25rem 0 0.25rem;
+        padding: 0.25rem 0.25rem 0 0.25rem;
+    }
+
+    .header-section .header-container .page-subtitle {
+        font-size: 1rem;
+        margin: 0.25rem 0.25rem 0 0.25rem;
+        padding: 0.25rem 0.25rem 0 0.25rem;
+    }
+
+    .header-section .header-container .details {
+        font-size: 1.1rem;
+        padding: 0.25rem 0.25rem;
+        margin: 0.25rem 0.25rem;
+    }
+
+    .header-section .header-container .button-group {
+        gap: 0;
+    }
+    
+}
